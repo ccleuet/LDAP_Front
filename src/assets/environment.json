@@ -1,0 +1,4 @@
+{
+  "production": false,
+  "ldapApiUrl": "http://localhost:8090/LdapApi-1.0-SNAPSHOT/ldap"
+}

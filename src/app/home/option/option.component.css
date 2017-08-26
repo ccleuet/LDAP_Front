@@ -1,0 +1,31 @@
+h2{
+	text-align:center;
+}
+
+.breadcrumb{
+	background-color:white;
+}
+
+.breadcrumb>li+li:before{
+	content:">";
+}
+
+#select{
+	padding-bottom: 20px;
+	margin-top:20px;
+}
+
+#selectGroup{
+	width:300px;
+	margin-bottom:15px;
+}
+
+.container{
+padding-bottom:40px;
+margin-top:-40px;
+}
+
+#loadgif{
+	padding-left:45%;
+	padding-top:20px;
+}

@@ -1,0 +1,46 @@
+<nav class="navbar navbar-inverse ">
+   <div class="container-fluid">
+      <img class="foo-icon" src="favicon.ico" >
+      <div class="navbar-header">
+         <a class="navbar-brand" href="/home">Ecole Centrale de Nantes</a>
+      </div>
+      <div class="navbar-content">
+	 <p class="navbar-text">Portail VPN</p>
+     </div>
+     <ul class="nav navbar-nav navbar-right">
+         <li class="dropdown">
+            <a href="#" id="welcome" class="dropdown-toggle" data-toggle="dropdown">Welcome {{user.cn}}
+            <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+               <li>
+                  <div class="navbar-content">
+                     <div class="row">
+                        <div class="col-md-12" id="profile">
+                           <span>{{user.centraleEtuCursus}} {{user.centraleEtuFormation}}</span>
+                           <p id="mail" class="text-muted small">
+                            {{user.mail}} 
+                           </p>
+                           <div class="divider">
+                           </div>
+                           <a class="btn btn-primary btn-sm active"  id="profilebtn">View Profile</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="navbar-footer">
+                     <div class="navbar-footer-content">
+                        <div class="row">
+                           <div class="col-md-6 col-sm-6 col-xs-6">
+                              <a class="btn btn-default btn-sm">Change Password</a>
+                           </div>
+                           <div class="col-md-6 col-sm-6 col-xs-6">
+                              <a class="btn btn-default btn-sm pull-right">Sign Out</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </li>
+      </ul>
+   </div>
+</nav>

@@ -1,0 +1,14 @@
+:host(app-footer) {
+  position: fixed;
+  left:0;
+  bottom: 0;
+  width: 100%;
+  line-height: 15px;
+  background-color: #091a30;
+  color:white;
+  padding: 0 6em 0 6em;
+}
+
+.container {
+    padding: 0;
+}

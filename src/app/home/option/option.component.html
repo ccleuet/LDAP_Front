@@ -1,0 +1,60 @@
+<div id="Ariane">
+   <ol class="breadcrumb">
+      <li class="breadcrumb-item active"><a href="/option">Options</a></li>
+      <li class="breadcrumb-item active"><a href="/option">Student</a></li>
+   </ol>
+</div>
+<div class="container">
+   <div>
+      <h2>Student Administration</h2>
+      <div>
+         <div class="form-group" id="select" >
+            <div class="col-md-2">
+               <h4>Select a Group :</h4>
+            </div>
+            <div class="col-md-10"> 
+               <select class="form-control" [(ngModel)]="option" (ngModelChange)="onChange($event)" id="selectGroup">
+               <option *ngFor="let option of optionlist" [value]="option">{{option}}</option>
+               </select>
+            </div>
+         </div>
+         <div>
+            <table class="table table-bordered table-striped">
+               <thead>
+                  <tr>
+                     <th>Id</th>
+                     <th>Name</th>
+                     <th>Email</th>
+                     <th>Birth Date</th>
+                     <th>EI2/EI3</th>
+                     <th>Option</th>
+                     <th>OptionPro</th>
+                     <th class="col-md-1">Actions</th>
+                  </tr>
+               </thead>
+               <tbody>
+
+                  <tr *ngFor="let member of memberlist">
+                     <td>{{ member?.uid }}</td>
+                     <td>{{ member?.cn }}</td>
+                     <td>{{ member?.mail }}</td>
+                     <td>{{ member?.centraleEtuDateNaissance }}</td>
+                     <td>{{ member?.centraleEtuFormation}}</td>
+                     <td>{{ member?.centraleEtuOption}}</td>
+                     <td>{{ member?.centraleEtuOptionPro }}</td>
+                     <td>
+                        <div class="btn-group btn-group-justified">
+                           <a class="btn btn-info"><i class="fa fa-edit"></i></a>
+                           <a class="btn btn-danger"><i class="fa fa-trash"></i></a>
+                        </div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+            <div [hidden]="hideLoader">
+            <img src="/assets/load.gif" alt="HTML5 Icon" id="loadgif">
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
